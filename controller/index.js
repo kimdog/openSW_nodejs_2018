@@ -127,7 +127,7 @@ exports.signin = function(req, res) {
 				else {
 					if( result === undefined || result.length == 0 ) {	
 						// 중복 없음
-						res.json([{errorCode: "0001"}]);
+						res.json([{uid: "-1"}]);
 					}
 					else {
 						
